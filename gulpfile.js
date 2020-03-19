@@ -77,6 +77,11 @@ function copyImages() {
         .pipe(gulp.dest('./build/assets/images'));
 }
 
+function copyToFirebase() {
+    return gulp.src('./build/**')
+        .pipe(gulp.dest('./y'));
+}
+
 function watch() {
     // You can tell browserSync to use this directory and serve it as a mini-server
     browserSync.init({
@@ -98,11 +103,11 @@ function watch() {
     // Reload page on js change
     gulp.watch(jsSrcPath, copyJs).on('change', browserSync.reload);
     gulp.watch(fontsPath, copyFonts).on('change', browserSync.reload);
-    gulp.watch(imagesPath, copyImages).on('change', browserSync.reload);    
+    gulp.watch(imagesPath, copyImages).on('change', browserSync.reload);
 }
 
 var genFiles = gulp.parallel(genCss, copyJs);
-var genAssets = gulp.parallel(copyFonts, copyImages);
+var genAssets = gulp.parallel(copyFonts, copyImages, copyToFirebase);
 var build = gulp.series(genAssets, genHtml, genFiles, watch);
 
 exports.style = genCss;
