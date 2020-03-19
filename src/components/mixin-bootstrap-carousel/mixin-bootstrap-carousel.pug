@@ -1,0 +1,14 @@
+mixin carousel( id, ...imgSrc )
+    .carousel.slide(data-ride='carousel', id= id)
+        ul.carousel-indicators
+            li.active(data-target= "#"+id data-slide-to='0')
+            li(data-target= "#"+id data-slide-to='1')
+            li(data-target= "#"+id data-slide-to='2')
+        .carousel-inner
+            each src in imgSrc
+                .carousel-item
+                    img(src= src alt='Los Angeles')
+        a.carousel-control-prev(href= "#"+id data-slide='prev')
+            span.carousel-control-prev-icon
+        a.carousel-control-next(href= "#"+id data-slide='next')
+            span.carousel-control-next-icon
