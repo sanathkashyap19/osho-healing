@@ -1,0 +1,11 @@
+# node modules 
+node_modules/
+
+# files under build folder
+build/
+
+package-lock.json
+
+audit-report/
+
+*.zip

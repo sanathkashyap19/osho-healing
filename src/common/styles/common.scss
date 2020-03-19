@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #6f9a37;
+    --color-secondary: #61a0fb;
+    --white: #fff;
+    --grey-font: #5d6265;
+    --heading-black: #3d474d;
+    --emphasis-green: #86a844;
+    --background-grey-dark: #eceae7;
+    --background-grey-light: #f8f7f6;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.primary-cta {
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+
+.secondary-cta {
+    background-color: var(--color-secondary);
+    color: var(--white);
+}
