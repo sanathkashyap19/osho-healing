@@ -6,6 +6,6 @@ build/
 
 package-lock.json
 
-audit-report/
+dist/
 
 *.zip
