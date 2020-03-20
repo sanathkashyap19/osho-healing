@@ -8,14 +8,23 @@
         width: 100%;
 
         .nav-pills {
+            @media only screen and (max-width: 767px) {
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+            }
 
             .nav-item {
                 margin: 10px;
+
+                @media only screen and (max-width: 767px) {
+                    flex: 0.75;
+                }
 
                 .nav-link {
                     color: var(--grey-font);
                     font-size: 14px;
                     padding: 10px 20px;
+                    white-space: nowrap;
 
                     &:hover {
                         color: var(--color-secondary);
@@ -46,9 +55,18 @@
                     align-items: center;
                     flex-flow: wrap;
 
+                    @media only screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+
                     .flip-card {
                         width: 30%;
                         height: 300px;
+
+                        @media only screen and (max-width: 767px) {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
                     }
                 }
             }
