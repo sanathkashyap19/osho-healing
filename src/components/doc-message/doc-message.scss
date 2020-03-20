@@ -1,15 +1,18 @@
-.container-60 {
-    .split-container.common-container {
-        padding-left: 0;
+.doc-message-container {
+    .container-60 {
+        .split-container.common-container {
+            padding-left: 0;
+            align-items: flex-start;
 
-        .half-container {
-            font-size: 1.2rem;
-            line-height: 1.3;
+            .half-container {
+                font-size: 1.2rem;
+                line-height: 1.3;
 
-            &:first-child {
-                padding-right: 40px;
+                &:first-child {
+                    padding-right: 40px;
+                }
             }
-        }
 
+        }
     }
 }
