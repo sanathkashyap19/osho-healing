@@ -1,0 +1,9 @@
+mixin flip-card(imgSrc, heading, content)
+    .flip-card
+        .flip-card-inner
+            .flip-card-front
+                .img-container
+                    img(src= imgSrc, alt='Avatar')
+            .flip-card-back
+                h1= heading
+                p= content

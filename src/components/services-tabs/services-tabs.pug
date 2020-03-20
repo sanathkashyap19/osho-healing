@@ -1,0 +1,31 @@
+include ../card-flip/card-flip.pug
+
+
+.services-tabs-container
+    h6.fancy-font
+        span Services
+    h2.emphasis-heading Healthy Life
+    .services-tabs
+        ul.nav.nav-pills
+            li.nav-item
+                a.nav-link.active(href='#tab1' data-toggle="pill") Tab 1
+            li.nav-item
+                a.nav-link(href='#tab2' data-toggle="pill") Tab 2
+            li.nav-item
+                a.nav-link(href='#tab3' data-toggle="pill") Tab 3
+        .tab-content
+            #tab1.tab-pane.container.active.show
+                .flex-container
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+            #tab2.tab-pane.container.fade
+                .flex-container
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+            #tab3.tab-pane.container.fade
+                .flex-container
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
+                    +flip-card("../../assets/images/doctor-message.jpg", "Card 1", "This is a sample flip card")
