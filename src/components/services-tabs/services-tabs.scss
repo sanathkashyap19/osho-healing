@@ -1,0 +1,49 @@
+.services-tabs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .services-tabs {
+        width: 100%;
+
+        .nav-pills {
+
+            .nav-item {
+                margin: 10px;
+
+                .nav-link {
+                    color: var(--grey-font);
+                    font-size: 14px;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        color: var(--color-secondary);
+                        background-color: var(--background-grey-dark);
+                    }
+                }
+
+                .active {
+                    color: var(--color-primary);
+                    background-color: var(--background-grey-dark);
+                }
+            }
+        }
+
+        .tab-content {
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: wrap;
+
+                .flip-card {
+                    width: 30%;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+
+}
