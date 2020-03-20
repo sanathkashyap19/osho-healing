@@ -31,17 +31,29 @@
         }
 
         .tab-content {
-            .flex-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-flow: wrap;
+            width: 100%;
+            margin: 0;
+            max-width: none;
 
-                .flip-card {
-                    width: 30%;
-                    height: 300px;
+            .tab-pane {
+                width: 100%;
+                margin: 0;
+                max-width: none;
+
+                .flex-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-flow: wrap;
+
+                    .flip-card {
+                        width: 30%;
+                        height: 300px;
+                    }
                 }
             }
+
+
         }
     }
 

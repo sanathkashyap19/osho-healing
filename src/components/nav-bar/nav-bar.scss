@@ -7,17 +7,30 @@
     display: flex;
     align-items: center;
     background-color: var(--background-grey-light);
+    box-shadow: 0 5px 4px #ddd;
 
     .logo-icon {
         width: 200px;
         height: 100%;
         background-color: var(--color-primary);
-        flex: 1;
+
+        // @media only screen and (max-width: 767px) {
+    //     flex: 1;
+    // }
     }
 
     .main-navigation {
+        max-width: 600px;
         flex: 3;
         display: inline-flex;
         justify-content: space-evenly;
+
+        a {
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+
+
     }
 }
