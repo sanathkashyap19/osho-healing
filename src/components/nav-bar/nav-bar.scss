@@ -14,9 +14,9 @@
         height: 100%;
         background-color: var(--color-primary);
 
-        // @media only screen and (max-width: 767px) {
-    //     flex: 1;
-    // }
+        @media only screen and (max-width: 767px) {
+            flex: 1;
+        }
     }
 
     .main-navigation {
