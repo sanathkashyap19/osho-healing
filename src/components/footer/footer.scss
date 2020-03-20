@@ -1,0 +1,40 @@
+.footer-container {
+    color: var(--white);
+
+    .split-container {
+        .half-container {
+            line-height: 2;
+
+            &:first-child {
+                ul {
+                    list-style: circle inside;
+
+                    li {
+                        a {
+                            cursor: pointer;
+
+                            &:hover {
+                                color: var(--color-secondary);
+                            }
+
+                            &:click {
+                                color: var(--color-primary);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                display: inline-flex;
+                justify-content: flex-end;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .salutation {
+        font-size: 12px;
+        color: var(--white);
+    }
+}

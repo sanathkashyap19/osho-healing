@@ -7,6 +7,7 @@
     --emphasis-green: #86a844;
     --background-grey-dark: #eceae7;
     --background-grey-light: #f8f7f6;
+    --background-dark: #0e0d12;
 }
 
 body {
@@ -16,6 +17,14 @@ body {
 
 .dark-grey-background {
     background-color: var(--background-grey-dark);
+}
+
+.dark-background {
+    background-color: var(--background-dark);
+}
+
+.full-width {
+    width: 100%;
 }
 
 .common-container {
