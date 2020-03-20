@@ -6,6 +6,8 @@ html(lang='en')
     include ../common/style_sources.pug
     body
         include ../components/nav-bar/nav-bar.pug
-        include ../components/hero-carousel/hero-carousel.pug
-        include ../components/work/work.pug
+        section
+            include ../components/hero-carousel/hero-carousel.pug
+        section.dark-grey-background.common-container
+            include ../components/doc-message/doc-message.pug
         include ../common/script_sources.pug
