@@ -6,11 +6,11 @@ html(lang='en')
     include ../common/style_sources.pug
     body
         include ../components/nav-bar/nav-bar.pug
-        section
+        section(id="home")
             include ../components/hero-carousel/hero-carousel.pug
-        section.dark-grey-background.common-container
+        section.dark-grey-background.common-container(id="about-us")
             include ../components/doc-message/doc-message.pug
-        section.common-container
+        section.common-container(id="services")
             include ../components/services-tabs/services-tabs.pug
         section.dark-background.common-container
             include ../components/footer/footer.pug
