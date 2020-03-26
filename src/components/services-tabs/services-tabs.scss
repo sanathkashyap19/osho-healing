@@ -51,7 +51,6 @@
 
                 .flex-container {
                     display: flex;
-                    justify-content: space-between;
                     align-items: center;
                     flex-flow: wrap;
 
@@ -62,10 +61,16 @@
                     .flip-card {
                         width: 30%;
                         height: 300px;
+                        margin-right: 20px;
+
+                        &:last-child {
+                            margin-right: unset;
+                        }
 
                         @media only screen and (max-width: 767px) {
                             width: 100%;
                             margin-top: 20px;
+                            margin-right: unset;
                         }
                     }
                 }
