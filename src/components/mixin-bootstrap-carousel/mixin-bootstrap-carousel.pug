@@ -1,9 +1,8 @@
 mixin carousel( id, ...imgSrc )
     .carousel.slide(data-ride='carousel', id= id)
         ul.carousel-indicators
-            li.active(data-target= "#"+id data-slide-to='0')
-            li(data-target= "#"+id data-slide-to='1')
-            li(data-target= "#"+id data-slide-to='2')
+            each src, index in imgSrc
+                li(data-target= "#"+id data-slide-to= index)
         .carousel-inner
             each src in imgSrc
                 .carousel-item
